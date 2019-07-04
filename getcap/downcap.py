@@ -1,6 +1,6 @@
 import requests
 import time
-
+import os
 
 def downimage(i):
     # 构建session
@@ -14,14 +14,14 @@ def downimage(i):
     # 获取响应图片内容
     image = session.get(url, headers=headers).content
     # 保存本地
-    with open("C://Users/sky/Desktop/urpcap/" + str(i) + ".jpg", "wb") as f:
+    with open(os.path.abspath(os.path.join(os.getcwd(), "../..")) + "/capimg/" + str(i) + ".jpg", "wb") as f:
         f.write(image)
 
 
 if __name__ == "__main__":
     # 获取i张照片
-    for i in range(100, 3000):
+    for i in range(1, 5000):
         downimage(i)
         print(i)
         print("成功\n")
-        time.sleep(0.5)
+        #time.sleep(0.5)
