@@ -10,7 +10,7 @@ def downimage(i):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
         "Connection": "keep-alive"}
     # 验证码链接
-    url = "http://jwxtxs.xxxx.edu.cn:00000/img/captcha.jpg"
+    url = "http://xxxx.xxxx.edu.cn:00000/img/captcha.jpg"
     # 获取响应图片内容
     image = session.get(url, headers=headers).content
     # 保存本地
