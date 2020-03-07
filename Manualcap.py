@@ -6,7 +6,7 @@ from PIL import Image
 
 
 def get_row(i):
-    with open("/Users/sky/code/python/tust/16012new.csv", encoding='utf-8') as csvfile:
+    with open("/Users/xxxx/code/python/xxxx/xxxx.csv", encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for h, rows in enumerate(reader):
             if h == i:
@@ -20,10 +20,10 @@ def get_html(stu_data):
     password = stu_data['Password']
 
     # cap_url用于获取验证码, login_url是登陆请求的URL, cj_url成绩
-    login_url = "http://jwxtxs.tust.edu.cn:46110/j_spring_security_check"
-    cap_url = 'http://jwxtxs.tust.edu.cn:46110/img/captcha.jpg'
-    Allscore_url = 'http://jwxtxs.tust.edu.cn:46110/student/integratedQuery/scoreQuery/allTermScores/data'
-    score_url = 'http://jwxtxs.tust.edu.cn:46110/student/integratedQuery/scoreQuery/thisTermScores/data'
+    login_url = "http://jwxtxs.xxxx.edu.cn:0000/j_spring_security_check"
+    cap_url = 'http://jwxtxs.xxxx.edu.cn:0000/img/captcha.jpg'
+    Allscore_url = 'http://xxxx.xxxx.edu.cn:0000/student/integratedQuery/scoreQuery/allTermScores/data'
+    score_url = 'http://jwxtxs.xxxx.edu.cn:0000/student/integratedQuery/scoreQuery/thisTermScores/data'
     # User-Agent信息
     user_agent = r'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36'
     # Headers信息
